@@ -17,6 +17,8 @@
 		DA8D1CBC2AD6EB7A005C1593 /* StudentAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D1CBB2AD6EB7A005C1593 /* StudentAppTests.swift */; };
 		DA8D1CC62AD6EB7A005C1593 /* StudentAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D1CC52AD6EB7A005C1593 /* StudentAppUITests.swift */; };
 		DA8D1CC82AD6EB7A005C1593 /* StudentAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D1CC72AD6EB7A005C1593 /* StudentAppUITestsLaunchTests.swift */; };
+		DA8D1CD52AD6ED36005C1593 /* ViewControllerStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D1CD42AD6ED36005C1593 /* ViewControllerStudents.swift */; };
+		DA8D1CD72AD6ED44005C1593 /* ViewControllerQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D1CD62AD6ED44005C1593 /* ViewControllerQuiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		DA8D1CC12AD6EB7A005C1593 /* StudentAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8D1CC52AD6EB7A005C1593 /* StudentAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAppUITests.swift; sourceTree = "<group>"; };
 		DA8D1CC72AD6EB7A005C1593 /* StudentAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA8D1CD42AD6ED36005C1593 /* ViewControllerStudents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStudents.swift; sourceTree = "<group>"; };
+		DA8D1CD62AD6ED44005C1593 /* ViewControllerQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerQuiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		DA8D1C952AD6EB79005C1593 = {
 			isa = PBXGroup;
 			children = (
+				DA8D1CD42AD6ED36005C1593 /* ViewControllerStudents.swift */,
+				DA8D1CD62AD6ED44005C1593 /* ViewControllerQuiz.swift */,
 				DA8D1CA02AD6EB79005C1593 /* StudentApp */,
 				DA8D1CBA2AD6EB7A005C1593 /* StudentAppTests */,
 				DA8D1CC42AD6EB7A005C1593 /* StudentAppUITests */,
@@ -262,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA8D1CA62AD6EB79005C1593 /* ViewController.swift in Sources */,
+				DA8D1CD72AD6ED44005C1593 /* ViewControllerQuiz.swift in Sources */,
+				DA8D1CD52AD6ED36005C1593 /* ViewControllerStudents.swift in Sources */,
 				DA8D1CA22AD6EB79005C1593 /* AppDelegate.swift in Sources */,
 				DA8D1CA42AD6EB79005C1593 /* SceneDelegate.swift in Sources */,
 				DA8D1CAC2AD6EB79005C1593 /* StudentApp.xcdatamodeld in Sources */,

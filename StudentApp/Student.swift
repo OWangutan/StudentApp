@@ -11,5 +11,10 @@ public struct Student{
     var name : String
     var color : String
     var number : Int
+    var isCool : IsCool
 }
 
+enum IsCool{
+    case notCool
+    case cool
+}

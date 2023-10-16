@@ -101,12 +101,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Sort Favorite #"/>
+                                <connections>
+                                    <action selector="numberAction:" destination="1Uf-Oa-yaq" eventType="touchUpInside" id="KZg-Bs-ECy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgN-EO-UZO">
                                 <rect key="frame" x="16" y="400" width="178" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Sort Favorite Color"/>
+                                <connections>
+                                    <action selector="ColorAction:" destination="1Uf-Oa-yaq" eventType="touchUpInside" id="dRE-ex-NLn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRq-4o-JMi">
                                 <rect key="frame" x="20" y="719" width="353" height="80"/>
@@ -139,6 +145,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Next"/>
+                                <connections>
+                                    <action selector="nextOutlit:" destination="1Uf-Oa-yaq" eventType="touchUpInside" id="MSv-b2-yP8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1ZB-pY-2HI"/>

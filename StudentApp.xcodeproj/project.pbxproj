@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3F257D2AD98A1A00A19B5E /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F257C2AD98A1A00A19B5E /* Student.swift */; };
 		DA8D1CA22AD6EB79005C1593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D1CA12AD6EB79005C1593 /* AppDelegate.swift */; };
 		DA8D1CA42AD6EB79005C1593 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D1CA32AD6EB79005C1593 /* SceneDelegate.swift */; };
 		DA8D1CA62AD6EB79005C1593 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D1CA52AD6EB79005C1593 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA3F257C2AD98A1A00A19B5E /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		DA8D1C9E2AD6EB79005C1593 /* StudentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8D1CA12AD6EB79005C1593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8D1CA32AD6EB79005C1593 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,8 +87,6 @@
 		DA8D1C952AD6EB79005C1593 = {
 			isa = PBXGroup;
 			children = (
-				DA8D1CD42AD6ED36005C1593 /* ViewControllerStudents.swift */,
-				DA8D1CD62AD6ED44005C1593 /* ViewControllerQuiz.swift */,
 				DA8D1CA02AD6EB79005C1593 /* StudentApp */,
 				DA8D1CBA2AD6EB7A005C1593 /* StudentAppTests */,
 				DA8D1CC42AD6EB7A005C1593 /* StudentAppUITests */,
@@ -110,6 +110,9 @@
 				DA8D1CA12AD6EB79005C1593 /* AppDelegate.swift */,
 				DA8D1CA32AD6EB79005C1593 /* SceneDelegate.swift */,
 				DA8D1CA52AD6EB79005C1593 /* ViewController.swift */,
+				DA8D1CD42AD6ED36005C1593 /* ViewControllerStudents.swift */,
+				DA8D1CD62AD6ED44005C1593 /* ViewControllerQuiz.swift */,
+				DA3F257C2AD98A1A00A19B5E /* Student.swift */,
 				DA8D1CA72AD6EB79005C1593 /* Main.storyboard */,
 				DA8D1CAD2AD6EB7A005C1593 /* Assets.xcassets */,
 				DA8D1CAF2AD6EB7A005C1593 /* LaunchScreen.storyboard */,
@@ -269,6 +272,7 @@
 			files = (
 				DA8D1CA62AD6EB79005C1593 /* ViewController.swift in Sources */,
 				DA8D1CD72AD6ED44005C1593 /* ViewControllerQuiz.swift in Sources */,
+				DA3F257D2AD98A1A00A19B5E /* Student.swift in Sources */,
 				DA8D1CD52AD6ED36005C1593 /* ViewControllerStudents.swift in Sources */,
 				DA8D1CA22AD6EB79005C1593 /* AppDelegate.swift in Sources */,
 				DA8D1CA42AD6EB79005C1593 /* SceneDelegate.swift in Sources */,

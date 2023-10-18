@@ -15,6 +15,6 @@ public struct Student{
 }
 
 enum IsCool{
-    case notCool
+    case not_Cool
     case cool
 }

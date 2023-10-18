@@ -8,22 +8,20 @@
 import UIKit
 
 class ViewControllerQuiz: UIViewController {
-
+    @IBOutlet weak var QuizOutlit: UITextView!
+    var students: [Student]!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //newQuetion()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func newQuetion(){
+        let randomInt = Int.random(in: 0..<students.count)
+        QuizOutlit.text = 
+        "\nFavorite Number: " + "\(students[randomInt].number)" +
+        "\nFavorite Color: " + students[randomInt].color +
+        "\nis \(students[randomInt].isCool)"
     }
-    */
 
 }

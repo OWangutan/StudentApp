@@ -8,6 +8,10 @@
 import UIKit
 
 class ViewControllerStudents: UIViewController {
+    @IBOutlet weak var addNameOutlit: UITextField!
+    @IBOutlet weak var addColorOutlit: UITextField!
+    @IBOutlet weak var addNumberOutlit: UITextField!
+    @IBOutlet weak var coolOutlit: UISwitch!
     @IBOutlet weak var studentInfoOutlet: UITextView!
     var index = 0
     var students: [Student] = [
@@ -20,7 +24,7 @@ class ViewControllerStudents: UIViewController {
         Student(name: "Mykaela Wallen", color: "Blue", number: 5, isCool: IsCool.cool),
         Student(name: "Brenden Wydra", color: "Purple", number: 20, isCool: IsCool.cool),
         Student(name: "Catherine huseby", color: "Pink", number: 7, isCool: IsCool.cool),
-        Student(name: "Liam Cox", color: "Orange", number: 14, isCool: IsCool.notCool),
+        Student(name: "Liam Cox", color: "Orange", number: 14, isCool: IsCool.cool),
         Student(name: "Annahlu Raclawski", color: "Red", number: 47, isCool: IsCool.cool),
         Student(name: "Natalie DuShane", color: "Blue", number: 14, isCool: IsCool.cool),
         Student(name: "Claire McGuire", color: "Blue", number: 4, isCool: IsCool.cool),
@@ -55,19 +59,42 @@ class ViewControllerStudents: UIViewController {
     }
     
     @IBAction func ColorAction(_ sender: Any) {
-        
+        students = students.sorted(by: { $0.color < $1.color })
+        index = 0
+        updateUI()
     }
     @IBAction func numberAction(_ sender: Any) {
+        students = students.sorted(by: { $0.number < $1.number })
+        index = 0
+        updateUI()
+    }
+    @IBAction func addStudentOutlit(_ sender: Any) {
         
+        var newStudent = Student(name: addNameOutlit.text!,
+                             color: addColorOutlit.text!,
+                             number: Int(addNumberOutlit.text!)!,
+                             isCool: IsCool.cool)
+        if(coolOutlit.isOn != true){
+            newStudent.isCool = IsCool.not_Cool;
+        }
+        students.append(newStudent)
+        addNameOutlit.text = ""
+        addColorOutlit.text = ""
+        addNumberOutlit.text = ""
     }
     func updateUI(){
         
-        studentInfoOutlet.text = "Student \(index + 1):" +
+        studentInfoOutlet.text = "Student #\(index + 1):" +
         "\nName: " + students[index].name +
         "\nFavorite Number: " + "\(students[index].number)" +
-        "\nFavorite Color: " + students[index].color
+        "\nFavorite Color: " + students[index].color +
+        "\nis \(students[index].isCool)"
         
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //nvc = next view controller
+        let nvc = segue.destination as! ViewControllerQuiz
+        nvc.students = students
+    }
 }
 

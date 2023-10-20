@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tc-sC-XEF">
-                                <rect key="frame" x="16" y="209" width="361" height="209"/>
+                                <rect key="frame" x="16" y="322" width="361" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Students"/>
@@ -25,8 +25,17 @@
                                     <segue destination="1Uf-Oa-yaq" kind="show" id="Yd6-Ve-K86"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gd-yc-GHQ">
+                                <rect key="frame" x="16" y="105" width="361" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="View Students"/>
+                                <connections>
+                                    <segue destination="BVJ-SY-KP7" kind="show" id="1Tp-lD-9BI"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf8-DN-Hc0">
-                                <rect key="frame" x="16" y="443" width="361" height="230"/>
+                                <rect key="frame" x="16" y="539" width="361" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Quiz Me"/>
@@ -157,7 +166,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4NJ-oL-TPE">
                                 <rect key="frame" x="50" y="496" width="301" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -229,6 +238,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAh-sm-MFU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2281.679389312977" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller View Students-->
+        <scene sceneID="uP4-nX-pRo">
+            <objects>
+                <viewController id="BVJ-SY-KP7" customClass="ViewControllerViewStudents" customModule="StudentApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7TB-MO-MFw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ruA-vQ-agr">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YMV-7y-yur"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YMV-7y-yur" firstAttribute="bottom" secondItem="ruA-vQ-agr" secondAttribute="bottom" id="6Ia-JY-D0m"/>
+                            <constraint firstItem="ruA-vQ-agr" firstAttribute="top" secondItem="YMV-7y-yur" secondAttribute="top" id="D77-AF-gOo"/>
+                            <constraint firstItem="YMV-7y-yur" firstAttribute="trailing" secondItem="ruA-vQ-agr" secondAttribute="trailing" id="V8O-eg-OfT"/>
+                            <constraint firstItem="ruA-vQ-agr" firstAttribute="leading" secondItem="YMV-7y-yur" secondAttribute="leading" id="eHv-qS-W7u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Muy-jX-7LC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wD-1X-xn1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2912" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TJ4-Qn-Mf9">

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA3F257D2AD98A1A00A19B5E /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F257C2AD98A1A00A19B5E /* Student.swift */; };
+		DA65EEB62AE2C45C00E03E4F /* ViewControllerViewStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA65EEB52AE2C45C00E03E4F /* ViewControllerViewStudents.swift */; };
 		DA8D1CA22AD6EB79005C1593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D1CA12AD6EB79005C1593 /* AppDelegate.swift */; };
 		DA8D1CA42AD6EB79005C1593 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D1CA32AD6EB79005C1593 /* SceneDelegate.swift */; };
 		DA8D1CA62AD6EB79005C1593 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D1CA52AD6EB79005C1593 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		DA3F257C2AD98A1A00A19B5E /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		DA65EEB52AE2C45C00E03E4F /* ViewControllerViewStudents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewStudents.swift; sourceTree = "<group>"; };
 		DA8D1C9E2AD6EB79005C1593 /* StudentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8D1CA12AD6EB79005C1593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8D1CA32AD6EB79005C1593 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				DA8D1CD62AD6ED44005C1593 /* ViewControllerQuiz.swift */,
 				DA3F257C2AD98A1A00A19B5E /* Student.swift */,
 				DA8D1CA72AD6EB79005C1593 /* Main.storyboard */,
+				DA65EEB52AE2C45C00E03E4F /* ViewControllerViewStudents.swift */,
 				DA8D1CAD2AD6EB7A005C1593 /* Assets.xcassets */,
 				DA8D1CAF2AD6EB7A005C1593 /* LaunchScreen.storyboard */,
 				DA8D1CB22AD6EB7A005C1593 /* Info.plist */,
@@ -276,6 +279,7 @@
 				DA8D1CD52AD6ED36005C1593 /* ViewControllerStudents.swift in Sources */,
 				DA8D1CA22AD6EB79005C1593 /* AppDelegate.swift in Sources */,
 				DA8D1CA42AD6EB79005C1593 /* SceneDelegate.swift in Sources */,
+				DA65EEB62AE2C45C00E03E4F /* ViewControllerViewStudents.swift in Sources */,
 				DA8D1CAC2AD6EB79005C1593 /* StudentApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
